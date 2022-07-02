@@ -1,0 +1,41 @@
+<!------------------------------------------------ 
+-- A Quiz App in HTML, CSS and JS               --
+-- It's also responsive!                        --
+-- Author: Nikos-Nikitas                        --
+-- GitHub: https://github.com/nikosnikitas      --
+------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Παιχνίδι Ερωτήσεων</title>
+</head>
+<body>
+    <div class="container">
+        <h3 id="quiz-title">Παιχνίδι Ερωτήσεων</h3>
+        <p>
+            <h5 id="question"></h5>
+            <div class="row">
+                <button class="answer-btn" id="a1">Answer 1</button>
+                <button class="answer-btn" id="a2">Answer 2</button>
+                <button class="answer-btn" id="a3">Answer 3</button>
+            </div>
+            <div class="row">
+                <button class="main-btn" id="result"> Δείτε το Αποτέλεσμα </button>
+                <button class="main-btn" id="next"> Επόμενο </button>
+            </div>
+            <div id="score-modal">
+                <h1> Το παιχνίδι ολοκληρώθηκε! </h1>
+                <h3 id="message"></h3>
+                <h3 id="score-tag"></h3>
+                <button class="main-btn answer-btn" id="retry">Δοκιμάστε ξανά</button>
+            </div>
+        </p>
+    </div>
+    <script defer type="text/javascript" src="index.js"></script>
+</body>
+</html>
